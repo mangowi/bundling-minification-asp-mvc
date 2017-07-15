@@ -26,6 +26,16 @@ namespace BundlingMinification
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // Adding our own bundle
+            bundles.Add(new ScriptBundle("~/bundles/customscripts").Include(
+                    "~/Scripts/JavaScript1.js",
+                     "~/Scripts/JavaScript2.js",
+                      "~/Scripts/JavaScript3.js"
+
+
+
+                ));
         }
     }
 }
