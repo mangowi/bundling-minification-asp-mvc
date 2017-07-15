@@ -40,9 +40,13 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
+    @*
     <script src="~/Scripts/JavaScript1.js"></script>
     <script src="~/Scripts/JavaScript2.js"></script>
-    <script src="~/Scripts/JavaScript3.js"></script>
+    <script src="~/Scripts/JavaScript3.js"></script>*@
+    @Scripts.Render("~/bundles/customscripts")
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>
