@@ -36,6 +36,9 @@ namespace BundlingMinification
 
 
                 ));
+
+            bundles.Add(new ScriptBundle("~/bundles/customstyles").Include(
+                "~/Content/StyleSheet*" ));
         }
     }
 }
